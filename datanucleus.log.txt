@@ -1,0 +1,63 @@
+16:21:01,753 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+16:46:23,452 (main) ERROR [DataNucleus.Persistence] - Error : Could not find API definition for name "JDO". Perhaps you dont have the requisite datanucleus-api-XXX jar in the CLASSPATH?
+16:46:50,445 (main) ERROR [DataNucleus.Persistence] - Error : Could not find API definition for name "JDO". Perhaps you dont have the requisite datanucleus-api-XXX jar in the CLASSPATH?
+16:50:52,029 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+16:50:52,162 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+16:50:52,457 (main) INFO  [DataNucleus.Enhancer] - Writing class file "D:\ProjectData\Shivu\stockboo-app\target\stockboo-app-1.0-SNAPSHOT\WEB-INF\classes\com\stockboo\app\InstallEntity.class" with enhanced definition
+16:50:52,458 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=247 ms, enhance=47 ms, total=294 ms. Consult the log for full details
+16:51:03,752 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+16:51:03,941 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+16:51:04,164 (main) INFO  [DataNucleus.Enhancer] - Class "com.stockboo.app.InstallEntity" is already enhanced.
+16:51:04,164 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=195 ms, enhance=25 ms, total=220 ms. Consult the log for full details
+17:12:03,015 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+17:12:03,195 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+17:12:03,460 (main) INFO  [DataNucleus.Enhancer] - Writing class file "D:\ProjectData\Shivu\stockboo-app\target\stockboo-app-1.0-SNAPSHOT\WEB-INF\classes\com\stockboo\app\InstallEntity.class" with enhanced definition
+17:12:03,461 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=217 ms, enhance=47 ms, total=264 ms. Consult the log for full details
+17:12:13,086 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+17:12:13,411 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+17:12:13,776 (main) INFO  [DataNucleus.Enhancer] - Class "com.stockboo.app.InstallEntity" is already enhanced.
+17:12:13,776 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=338 ms, enhance=24 ms, total=362 ms. Consult the log for full details
+17:16:27,846 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+17:16:28,099 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+17:16:28,437 (main) INFO  [DataNucleus.Enhancer] - Writing class file "D:\ProjectData\Shivu\stockboo-app\target\stockboo-app-1.0-SNAPSHOT\WEB-INF\classes\com\stockboo\app\InstallEntity.class" with enhanced definition
+17:16:28,438 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=287 ms, enhance=50 ms, total=337 ms. Consult the log for full details
+17:16:40,506 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+17:16:40,663 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+17:16:40,935 (main) INFO  [DataNucleus.Enhancer] - Class "com.stockboo.app.InstallEntity" is already enhanced.
+17:16:40,936 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=246 ms, enhance=26 ms, total=272 ms. Consult the log for full details
+17:18:37,637 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+17:18:37,826 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+17:18:38,148 (main) INFO  [DataNucleus.Enhancer] - Writing class file "D:\ProjectData\Shivu\stockboo-app\target\stockboo-app-1.0-SNAPSHOT\WEB-INF\classes\com\stockboo\app\InstallEntity.class" with enhanced definition
+17:18:38,149 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=277 ms, enhance=45 ms, total=322 ms. Consult the log for full details
+17:18:53,964 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+17:18:54,110 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+17:18:54,354 (main) INFO  [DataNucleus.Enhancer] - Class "com.stockboo.app.InstallEntity" is already enhanced.
+17:18:54,354 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=216 ms, enhance=27 ms, total=243 ms. Consult the log for full details
+17:39:20,872 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+17:39:21,119 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+17:39:21,534 (main) INFO  [DataNucleus.Enhancer] - Writing class file "D:\ProjectData\Shivu\stockboo-app\target\stockboo-app-1.0-SNAPSHOT\WEB-INF\classes\com\stockboo\app\InstallEntity.class" with enhanced definition
+17:39:21,535 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=340 ms, enhance=72 ms, total=412 ms. Consult the log for full details
+17:39:37,531 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+17:39:37,681 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+17:39:37,945 (main) INFO  [DataNucleus.Enhancer] - Class "com.stockboo.app.InstallEntity" is already enhanced.
+17:39:37,945 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=234 ms, enhance=29 ms, total=263 ms. Consult the log for full details
+17:46:14,638 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+17:46:14,873 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+17:46:15,183 (main) INFO  [DataNucleus.Enhancer] - Writing class file "D:\ProjectData\Shivu\stockboo-app\target\stockboo-app-1.0-SNAPSHOT\WEB-INF\classes\com\stockboo\app\InstallEntity.class" with enhanced definition
+17:46:15,183 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=260 ms, enhance=49 ms, total=309 ms. Consult the log for full details
+17:46:29,081 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+17:46:29,275 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+17:46:29,533 (main) INFO  [DataNucleus.Enhancer] - Class "com.stockboo.app.InstallEntity" is already enhanced.
+17:46:29,533 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=227 ms, enhance=29 ms, total=256 ms. Consult the log for full details
+18:46:22,213 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+18:46:22,357 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+18:46:22,652 (main) INFO  [DataNucleus.Enhancer] - Writing class file "D:\ProjectData\Shivu\stockboo-app\target\stockboo-app-1.0-SNAPSHOT\WEB-INF\classes\com\stockboo\app\entity\InstallEntity.class" with enhanced definition
+18:46:22,653 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=247 ms, enhance=48 ms, total=295 ms. Consult the log for full details
+18:46:36,598 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+18:46:36,777 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+18:46:37,084 (main) INFO  [DataNucleus.Enhancer] - Class "com.stockboo.app.entity.InstallEntity" is already enhanced.
+18:46:37,084 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=271 ms, enhance=33 ms, total=304 ms. Consult the log for full details
+18:59:58,089 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+18:59:58,295 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+18:59:58,599 (main) INFO  [DataNucleus.Enhancer] - Class "com.stockboo.app.entity.InstallEntity" is already enhanced.
+18:59:58,599 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 1 classes. Timings : input=276 ms, enhance=26 ms, total=302 ms. Consult the log for full details

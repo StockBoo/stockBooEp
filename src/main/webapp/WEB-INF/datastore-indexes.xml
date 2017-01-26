@@ -1,0 +1,44 @@
+<!-- Indices written at Thu, 13 Oct 2016 18:17:13 IST -->
+
+<datastore-indexes autoGenerate="true">
+
+	<!-- Used 5 times in query history -->
+	<datastore-index kind="MessageEntity" ancestor="false"
+		source="auto">
+		<property name="stockId" direction="asc" />
+		<property name="messageId" direction="asc" />
+	</datastore-index>
+
+	<datastore-index kind="StockEntity" ancestor="false"
+		source="auto">
+		<property name="__key__" direction="asc" />
+		<property name="status" direction="asc" />
+		<property name="sugesstionType" direction="asc" />
+		<property name="createdAt" direction="asc" />
+	</datastore-index>
+	
+	<datastore-index kind="StockEntity" ancestor="false"
+		source="auto">
+		<property name="status" direction="asc" />
+		<property name="sugesstionType" direction="asc" />
+		<property name="createdAt" direction="asc" />
+	</datastore-index>
+	
+	<datastore-index kind="StockEntity" ancestor="false"
+		source="auto">
+		<property name="sugesstionType" direction="asc" />
+		<property name="createdAt" direction="asc" />
+	</datastore-index>
+	
+	<datastore-index kind="StockEntity" ancestor="false"
+		source="auto">
+		<property name="status" direction="asc" />
+		<property name="createdAt" direction="asc" />
+	</datastore-index>
+	
+	 <datastore-index kind="MessageEntity" ancestor="false" source="manual">
+        <property name="stockId" direction="asc"/>
+        <property name="createdAt" direction="desc"/>
+    </datastore-index>
+	
+</datastore-indexes>

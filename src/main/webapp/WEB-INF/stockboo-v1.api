@@ -1,0 +1,804 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://stockboo-app.appspot.com/_ah/api",
+  "name" : "stockboo",
+  "version" : "v1",
+  "description" : "Stockboo cloud-endpoint",
+  "defaultVersion" : false,
+  "discovery" : [ "PUBLIC" ],
+  "adapter" : {
+    "bns" : "https://stockboo-app.appspot.com/_ah/spi",
+    "deadline" : 65.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "methods" : {
+    "stockboo.messages.list" : {
+      "path" : "messages/list",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.messageList",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "stockboo.installations.read" : {
+      "path" : "installations/read",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.installationRead",
+      "request" : {
+        "parameters" : {
+          "installationsID" : {
+            "type" : "int64",
+            "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "stockboo.installations.create" : {
+      "path" : "installations/create",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.installationCreate",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "stockboo.installations.update" : {
+      "path" : "installations/update",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.installationUpdate",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "stockboo.installations.list" : {
+      "path" : "installations/list",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.installationList",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "stockboo.advisors.create" : {
+      "path" : "advisors/create",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.advisorCreate",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "stockboo.advisors.list" : {
+      "path" : "advisors/list",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.advisorList",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "stockboo.advisors.read" : {
+      "path" : "advisors/read",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.advisorRead",
+      "request" : {
+        "parameters" : {
+          "advisorId" : {
+            "type" : "int64",
+            "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "stockboo.advisors.update" : {
+      "path" : "advisors/update",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.advisorUpdate",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "stockboo.advisors.block" : {
+      "path" : "advisors/block",
+      "httpMethod" : "PUT",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.advisorBlock",
+      "request" : {
+        "parameters" : {
+          "advisorId" : {
+            "type" : "int64",
+            "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "stockboo.advisors.delete" : {
+      "path" : "advisors/delete",
+      "httpMethod" : "DELETE",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.advisorDelete",
+      "request" : {
+        "parameters" : {
+          "advisorId" : {
+            "type" : "int64",
+            "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "empty"
+      }
+    },
+    "stockboo.stocks.create" : {
+      "path" : "stocks/create",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.stockCreate",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "stockboo.stocks.update" : {
+      "path" : "stocks/update",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.stockUpdate",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "stockboo.stocks.delete" : {
+      "path" : "stocks/delete",
+      "httpMethod" : "DELETE",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.stockDelete",
+      "request" : {
+        "parameters" : {
+          "stockId" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "empty"
+      }
+    },
+    "stockboo.stocks.list" : {
+      "path" : "stocks/list",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.stockList",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "stockboo.messages.create" : {
+      "path" : "messages/create",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.messageCreate",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "stockboo.messages.delete" : {
+      "path" : "messages/delete",
+      "httpMethod" : "DELETE",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.stockboo.app.YourFirstAPI.messageDelete",
+      "request" : {
+        "parameters" : {
+          "messageId" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "empty"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "Message" : {
+        "id" : "Message",
+        "type" : "object",
+        "properties" : {
+          "messageId" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "content" : {
+            "type" : "string"
+          },
+          "stockId" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "stockName" : {
+            "type" : "string"
+          }
+        }
+      },
+      "MessageCollection" : {
+        "id" : "MessageCollection",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Message"
+            }
+          }
+        }
+      },
+      "Install" : {
+        "id" : "Install",
+        "type" : "object",
+        "properties" : {
+          "installationId" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "appIdentifier" : {
+            "type" : "string"
+          },
+          "appName" : {
+            "type" : "string"
+          },
+          "appVersion" : {
+            "type" : "string"
+          },
+          "deviceType" : {
+            "type" : "string"
+          },
+          "timeZone" : {
+            "$ref" : "TimeZone"
+          },
+          "createdAt" : {
+            "$ref" : "Timestamp"
+          },
+          "updatedAt" : {
+            "$ref" : "Timestamp"
+          }
+        }
+      },
+      "TimeZone" : {
+        "id" : "TimeZone",
+        "type" : "object",
+        "properties" : {
+          "displayName" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "rawOffset" : {
+            "type" : "integer"
+          },
+          "dstsavings" : {
+            "type" : "integer"
+          }
+        }
+      },
+      "Timestamp" : {
+        "id" : "Timestamp",
+        "type" : "object",
+        "properties" : {
+          "nanos" : {
+            "type" : "integer"
+          },
+          "time" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "date" : {
+            "type" : "integer"
+          },
+          "month" : {
+            "type" : "integer"
+          },
+          "hours" : {
+            "type" : "integer"
+          },
+          "minutes" : {
+            "type" : "integer"
+          },
+          "seconds" : {
+            "type" : "integer"
+          },
+          "year" : {
+            "type" : "integer"
+          },
+          "day" : {
+            "type" : "integer"
+          },
+          "timezoneOffset" : {
+            "type" : "integer"
+          }
+        }
+      },
+      "InstallCreate" : {
+        "id" : "InstallCreate",
+        "type" : "object",
+        "properties" : {
+          "appIdentifier" : {
+            "type" : "string"
+          },
+          "appName" : {
+            "type" : "string"
+          },
+          "appVersion" : {
+            "type" : "string"
+          },
+          "deviceType" : {
+            "type" : "string"
+          },
+          "timeZone" : {
+            "$ref" : "TimeZone"
+          },
+          "createdAt" : {
+            "$ref" : "Timestamp"
+          }
+        }
+      },
+      "InstallCollection" : {
+        "id" : "InstallCollection",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Install"
+            }
+          }
+        }
+      },
+      "AdvisorCreate" : {
+        "id" : "AdvisorCreate",
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "info" : {
+            "type" : "string"
+          },
+          "email" : {
+            "$ref" : "Email"
+          },
+          "mobileNumber" : {
+            "type" : "integer"
+          },
+          "password" : {
+            "type" : "string"
+          },
+          "createdAt" : {
+            "$ref" : "Timestamp"
+          },
+          "advisorBlocked" : {
+            "type" : "boolean"
+          },
+          "superAdmin" : {
+            "type" : "boolean"
+          }
+        }
+      },
+      "Email" : {
+        "id" : "Email",
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Advisor" : {
+        "id" : "Advisor",
+        "type" : "object",
+        "properties" : {
+          "advisorId" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "info" : {
+            "type" : "string"
+          },
+          "email" : {
+            "$ref" : "Email"
+          },
+          "mobileNumber" : {
+            "type" : "integer"
+          },
+          "password" : {
+            "type" : "string"
+          },
+          "createdAt" : {
+            "$ref" : "Timestamp"
+          },
+          "updatedAt" : {
+            "$ref" : "Timestamp"
+          },
+          "advisorBlocked" : {
+            "type" : "boolean"
+          },
+          "superAdmin" : {
+            "type" : "boolean"
+          }
+        }
+      },
+      "AdvisorCollection" : {
+        "id" : "AdvisorCollection",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Advisor"
+            }
+          }
+        }
+      },
+      "StockCreate" : {
+        "id" : "StockCreate",
+        "type" : "object",
+        "properties" : {
+          "advisorId" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "stockName" : {
+            "type" : "string"
+          },
+          "scriptCode" : {
+            "type" : "string"
+          },
+          "sugesstionType" : {
+            "$ref" : "SugesstionType"
+          },
+          "buyPrice" : {
+            "type" : "number"
+          },
+          "stopLoss" : {
+            "type" : "number"
+          },
+          "targetPrice" : {
+            "type" : "number"
+          },
+          "bookingPrice" : {
+            "type" : "number"
+          },
+          "message" : {
+            "type" : "string"
+          },
+          "status" : {
+            "$ref" : "StockStatus"
+          },
+          "result" : {
+            "type" : "string"
+          },
+          "createdAt" : {
+            "$ref" : "Timestamp"
+          }
+        }
+      },
+      "SugesstionType" : {
+        "id" : "SugesstionType",
+        "type" : "string",
+        "enum" : [ "SHORT_TERM", "MID_TERM", "LONG_TERM" ]
+      },
+      "StockStatus" : {
+        "id" : "StockStatus",
+        "type" : "string",
+        "enum" : [ "OPEN", "CLOSED" ]
+      },
+      "Stock" : {
+        "id" : "Stock",
+        "type" : "object",
+        "properties" : {
+          "advisorId" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "stockName" : {
+            "type" : "string"
+          },
+          "scriptCode" : {
+            "type" : "string"
+          },
+          "sugesstionType" : {
+            "$ref" : "SugesstionType"
+          },
+          "buyPrice" : {
+            "type" : "number"
+          },
+          "stopLoss" : {
+            "type" : "number"
+          },
+          "targetPrice" : {
+            "type" : "number"
+          },
+          "bookingPrice" : {
+            "type" : "number"
+          },
+          "message" : {
+            "type" : "string"
+          },
+          "status" : {
+            "$ref" : "StockStatus"
+          },
+          "result" : {
+            "type" : "string"
+          },
+          "createdAt" : {
+            "$ref" : "Timestamp"
+          },
+          "updatedAt" : {
+            "$ref" : "Timestamp"
+          },
+          "lastLogin" : {
+            "$ref" : "Timestamp"
+          },
+          "stockId" : {
+            "type" : "string",
+            "format" : "int64"
+          }
+        }
+      },
+      "StockCollection" : {
+        "id" : "StockCollection",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Stock"
+            }
+          }
+        }
+      },
+      "MessageCreate" : {
+        "id" : "MessageCreate",
+        "type" : "object",
+        "properties" : {
+          "content" : {
+            "type" : "string"
+          },
+          "stockId" : {
+            "type" : "string",
+            "format" : "int64"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.stockboo.app.YourFirstAPI.messageList" : {
+        "response" : {
+          "$ref" : "MessageCollection"
+        }
+      },
+      "com.stockboo.app.YourFirstAPI.installationRead" : {
+        "response" : {
+          "$ref" : "Install"
+        }
+      },
+      "com.stockboo.app.YourFirstAPI.installationCreate" : {
+        "request" : {
+          "$ref" : "InstallCreate"
+        },
+        "response" : {
+          "$ref" : "Install"
+        }
+      },
+      "com.stockboo.app.YourFirstAPI.installationUpdate" : {
+        "request" : {
+          "$ref" : "Install"
+        },
+        "response" : {
+          "$ref" : "Install"
+        }
+      },
+      "com.stockboo.app.YourFirstAPI.installationList" : {
+        "response" : {
+          "$ref" : "InstallCollection"
+        }
+      },
+      "com.stockboo.app.YourFirstAPI.advisorCreate" : {
+        "request" : {
+          "$ref" : "AdvisorCreate"
+        },
+        "response" : {
+          "$ref" : "Advisor"
+        }
+      },
+      "com.stockboo.app.YourFirstAPI.advisorList" : {
+        "response" : {
+          "$ref" : "AdvisorCollection"
+        }
+      },
+      "com.stockboo.app.YourFirstAPI.advisorRead" : {
+        "response" : {
+          "$ref" : "Advisor"
+        }
+      },
+      "com.stockboo.app.YourFirstAPI.advisorUpdate" : {
+        "request" : {
+          "$ref" : "Advisor"
+        },
+        "response" : {
+          "$ref" : "Advisor"
+        }
+      },
+      "com.stockboo.app.YourFirstAPI.advisorBlock" : {
+        "response" : {
+          "$ref" : "Advisor"
+        }
+      },
+      "com.stockboo.app.YourFirstAPI.advisorDelete" : {
+      },
+      "com.stockboo.app.YourFirstAPI.stockCreate" : {
+        "request" : {
+          "$ref" : "StockCreate"
+        },
+        "response" : {
+          "$ref" : "Stock"
+        }
+      },
+      "com.stockboo.app.YourFirstAPI.stockUpdate" : {
+        "request" : {
+          "$ref" : "Stock"
+        },
+        "response" : {
+          "$ref" : "Stock"
+        }
+      },
+      "com.stockboo.app.YourFirstAPI.stockDelete" : {
+      },
+      "com.stockboo.app.YourFirstAPI.stockList" : {
+        "response" : {
+          "$ref" : "StockCollection"
+        }
+      },
+      "com.stockboo.app.YourFirstAPI.messageCreate" : {
+        "request" : {
+          "$ref" : "MessageCreate"
+        },
+        "response" : {
+          "$ref" : "Message"
+        }
+      },
+      "com.stockboo.app.YourFirstAPI.messageDelete" : {
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Stackboo Endpoints!</title>
+    <script type="text/javascript" src="/js/base.js"></script>
+    <link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+        }
+        blockquote {
+            margin-bottom: 10px;
+            border-left-color: #bbb;
+        }
+        form {
+            margin-top: 10px;
+        }
+        .form-signin input[type="text"] {
+            font-size: 16px;
+            height: auto;
+            margin-bottom: 15px;
+            padding: 7px 9px;
+        }
+        .row {
+            margin-left: 0px;
+            margin-top: 10px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">Stackboo Endpoints!</a>
+            <div class="nav-collapse collapse pull-right">
+                <a href="advisorcreate.html" class="btn" id="signinButton">Sign in</a>
+                <!-- <button onclick="window.location.href='/page2'">Continue</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <div id="outputLog"></div>
+
+    <form action="javascript:void(0);">
+        <h2>Welcome Advisor</h2>
+        <h5>Please select the action todo</h5>
+         <a href="advisorcreate.html" class="btn" id="signinButton">Advisor create</a>
+         <a href="stockcreate.html" class="btn" id="signinButton">Stock create</a>
+         <a href="messagecreate.html" class="btn" id="signinButton">Message create</a>
+        <!-- <div><input id="advisorLogin" type="submit" class="btn btn-small" value="Submit"></div> -->
+    </form>
+    
+    <script type="text/javascript">
+        function init() {
+        	google.devrel.samples.stackboo.init('//' + window.location.host + '/_ah/api');
+        }
+    </script>
+    <script src="https://apis.google.com/js/client.js?onload=init"></script>
+</div>
+</body>
+</html>
